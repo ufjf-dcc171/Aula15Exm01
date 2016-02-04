@@ -3,6 +3,7 @@ package br.ufjf.dcc;
 import java.util.Date;
 
 public class Visitante {
+    private Long id;
     private String nome;
     private Integer idade;
     private Date entrada = new Date();
@@ -54,8 +55,17 @@ public class Visitante {
 
     @Override
     public String toString() {
-        return "Visitante{" + "nome=" + nome + ", idade=" + idade + ", entrada=" + entrada + ", saida=" + saida + '}';
+        return "Visitante{id=" +id+ " nome=" + nome + ", idade=" + idade + ", entrada=" + entrada + ", saida=" + saida + '}';
     }
+
+    void setId(Long novoId) {
+        this.id = novoId;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
     
     
     
